@@ -188,24 +188,28 @@ The `Highlights` component displays a visually impactful circular highlight sect
 
 The component:
 
-- Wraps the section in a centered `Flex` container with responsive margins and paddings.
-- Uses Chakra UI's `Box`, `Grid`, and `GridItem` for layout.
-- Fetches blog content from the `blogContent` array in the `constants/index.ts` file.
-- Renders:
-  - `BlogsMobile` for mobile view (base to `md`).
-  - A grid layout with 4 `BlogCard` entries for screens `md` and above.
+- Wraps the section in a centered `Flex` container with responsive height (100vh on xl), padding, and background color from the brand.bgDark theme.
 
-###  Responsive Behavior
+- Uses Chakra UI's `Box`, `Flex`, `Image`, and `Text` components for layout and styling.
 
-- **Mobile (`base` to `md`)**: Displays a compact mobile-specific version using `<BlogsMobile />`.
-- **Desktop (`md` and up)**: Renders a grid with strategically positioned blog cards for visual hierarchy.
+- Utilizes `useRef` to reference the container and heading elements for animation.
+
+- Triggers a `GSAP ScrollTrigger` animation on the heading when it enters the viewport.
+
+Renders:
+
+- An absolutely positioned fading top overlay (fade-top).
+
+- A nested visual centerpiece composed of `OuterBorderRing and InnerBorderRing` surrounding the logoActive image.
+
+- A stylized, multi-line heading with animated appearance and additional decorative sparkle image.
+
 
 ###  Dependencies
 
 - `@chakra-ui/react` — for responsive layout and styling.
 - `OuterBorderRing` and `InnerBorderRing` components for orbital animations.
 - `GSAP with ScrollTrigger` - scroll-based heading animation.
-- Static assets like `logoActive` and `sparkles` images.
 
 ###  Props
 
@@ -213,9 +217,9 @@ This component does **not** accept any props. All data is pulled from constants 
 
 ###  Notes
 
-Uses useRef and useEffect to trigger GSAP animation when heading enters viewport.
+Uses `useRef` and `useEffect` to trigger GSAP animation when heading enters viewport.
 
-The nested ring components and central image create a strong visual focal point.
+The nested `ring components` and central image create a strong visual focal point.
 
 Designed for full viewport height (100vh) on large screens, but responsive to smaller viewports.
 
