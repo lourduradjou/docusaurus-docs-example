@@ -170,3 +170,57 @@ colors.ts: Defines the color palette for the app.
 **vite-env.d.ts**: TypeScript environment definitions for Vite.
 
 This structure supports scalability, maintainability, and clear separation of concerns, following best practices for modern React/TypeScript projects using Chakra UI and Vite
+
+
+
+
+## Component: `Highlights.tsx`
+
+- **Location**: `src/components/sections/Highlights.tsx`
+- **Type**: Section Component
+- **Used In**: `LandingPage.tsx`
+
+###  Purpose
+
+The `Highlights` component displays a visually impactful circular highlight section with a company logo, animated orbital effects, and a stylized heading. Communicates key messaging through motion-enhanced visuals and layered typography.
+
+###  Structure and Functionality
+
+The component:
+
+- Wraps the section in a centered `Flex` container with responsive margins and paddings.
+- Uses Chakra UI's `Box`, `Grid`, and `GridItem` for layout.
+- Fetches blog content from the `blogContent` array in the `constants/index.ts` file.
+- Renders:
+  - `BlogsMobile` for mobile view (base to `md`).
+  - A grid layout with 4 `BlogCard` entries for screens `md` and above.
+
+###  Responsive Behavior
+
+- **Mobile (`base` to `md`)**: Displays a compact mobile-specific version using `<BlogsMobile />`.
+- **Desktop (`md` and up)**: Renders a grid with strategically positioned blog cards for visual hierarchy.
+
+###  Dependencies
+
+- `@chakra-ui/react` — for responsive layout and styling.
+- `OuterBorderRing` and `InnerBorderRing` components for orbital animations.
+- `GSAP with ScrollTrigger` - scroll-based heading animation.
+- Static assets like `logoActive` and `sparkles` images.
+
+###  Props
+
+This component does **not** accept any props. All data is pulled from constants or managed internally.
+
+###  Notes
+
+Uses useRef and useEffect to trigger GSAP animation when heading enters viewport.
+
+The nested ring components and central image create a strong visual focal point.
+
+Designed for full viewport height (100vh) on large screens, but responsive to smaller viewports.
+
+Layered text below the ring provides branded messaging.
+
+Easy to update visual elements (e.g., central logo, highlight text, or orbital behavior) without affecting layout logic.
+
+---
