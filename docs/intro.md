@@ -1,8 +1,8 @@
-# Agent Matters Landing Page Documentation
+# XYZ Documentation
 
 ## Project Overview
 
-This is a responsive landing page for **Agent Matters**, built using **ReactJS**, **ViteJS**, **TypeScript**, and **Chakra UI**. The page is optimized for speed, responsiveness, and accessibility.
+This is a responsive landing page for **XYZ**, built using **ReactJS**, **ViteJS**, **TypeScript**, and **Chakra UI**. The page is optimized for speed, responsiveness, and accessibility.
 
 ## Tech Stack Used
 
@@ -11,7 +11,6 @@ The project is built using the following technologies:
 -   **React** — v19.0.0
 -   **Vite** — v6.2.0 (for blazing-fast development and build)
 -   **TypeScript** — ~v5.7.2 (for type safety and better developer experience)
--   **Chakra UI** — v3.17.0 (for accessible and modular component styling)
 
 ## Prerequisites
 
@@ -56,62 +55,15 @@ npm run dev
 ```bash
 📦src
  ┣ 📂assets
- ┃ ┣ 📂icons
- ┃ ┃ ┣ 📜arrow-left-activated.webp
- ┃ ┃ ┣ 📜arrow-left-inactivated.webp
- ┃ ┃ ┣ 📜arrow-right-activated.webp
- ┃ ┃ ┣ 📜arrow-right-inactivated.webp
- ┃ ┃ ┗ 📜index.ts
- ┃ ┗ 📂images
- ┃ ┃ ┣ 📜dotted-overlay-white.webp
- ┃ ┃ ┣ 📜dotted-overlay.webp
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┣ 📜logo-activated.webp
- ┃ ┃ ┣ 📜logo-inactivated.webp
- ┃ ┃ ┣ 📜sparkles.webp
- ┃ ┃ ┗ 📜world-dotted.webp
  ┣ 📂components
  ┃ ┣ 📂sections
- ┃ ┃ ┣ 📜Blogs.tsx
- ┃ ┃ ┣ 📜CoreFeatures.tsx
- ┃ ┃ ┣ 📜Hero.tsx
- ┃ ┃ ┣ 📜Highlights.tsx
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┣ 📜InfoAndUpdates.tsx
- ┃ ┃ ┗ 📜ValueProposition.tsx
- ┃ ┃ ┗ 📜Spotlight.tsx
+ ┃ ┃ ┣ 📜xyz.tsx
  ┃ ┗ 📂ui
  ┃ ┃ ┣ 📜BlogCard.tsx
- ┃ ┃ ┣ 📜BlogsMobile.tsx
- ┃ ┃ ┣ 📜Button.tsx
- ┃ ┃ ┣ 📜DownArrow.tsx
- ┃ ┃ ┣ 📜FAQ.tsx
- ┃ ┃ ┣ 📜Footer.tsx
- ┃ ┃ ┣ 📜FooterDesktop.tsx
- ┃ ┃ ┣ 📜FooterMobile.tsx
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┣ 📜Navbar.tsx
- ┃ ┃ ┣ 📜NavbarMobileDrawer.tsx
- ┃ ┃ ┣ 📜NewsletterSubscription.tsx
- ┃ ┃ ┗ 📜Provider.tsx
- ┣ 📂constants
- ┃ ┗ 📜index.ts
- ┣ 📂hooks
- ┃ ┗ 📜index.ts
- ┣ 📂layout
- ┃ ┗ 📜MainLayout.tsx
- ┣ 📂pages
- ┃ ┗ 📜LandingPage.tsx
- ┣ 📂theme
- ┃ ┣ 📜colors.ts
- ┃ ┗ 📜index.ts
- ┣ 📜App.css
- ┣ 📜App.tsx
- ┣ 📜main.tsx
  ┗ 📜vite-env.d.ts
 ```
 
-## Folder Overview for Agent Matters Landing Page
+## Folder Overview for XYZ
 
 Below is a breakdown of each main folder in your src directory, explaining its purpose and typical contents. This overview will help you and your team navigate and maintain the codebase efficiently.
 
@@ -199,7 +151,6 @@ The component:
 
 ###  Dependencies
 
-- `@chakra-ui/react` — for responsive layout and styling.
 - `BlogCard` — reusable card UI for displaying individual blog entries.
 - `BlogsMobile` — mobile-optimized blog display component.
 - `blogContent` — array of blog data (title, description, date) from constants.
