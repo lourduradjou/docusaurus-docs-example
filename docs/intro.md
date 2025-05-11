@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a responsive landing page for **XYZ**, built using **ReactJS**, **ViteJS**, **TypeScript**, and **Chakra UI**. The page is optimized for speed, responsiveness, and accessibility.
+This is a responsive landing page for **XYZ**, built using **ReactJS**, **ViteJS**, **TypeScript**. The page is optimized for speed, responsiveness, and accessibility.
 
 ## Tech Stack Used
 
